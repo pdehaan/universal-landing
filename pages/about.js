@@ -4,13 +4,13 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Jumbotron from '../components/Jumbotron';
-import PostList from '../components/PostList';
+import TeamList from '../components/TeamList';
 
 export default ({ children, title = 'The Universal Blog' }) => (
   <Layout>
     <Header>
       <Jumbotron centered>
-        <h1>{title}</h1>
+        <h1>{'About | ' + title}</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -18,6 +18,6 @@ export default ({ children, title = 'The Universal Blog' }) => (
         </p>
       </Jumbotron>
     </Header>
-    <PostList />
+    <TeamList />
   </Layout>
 );
