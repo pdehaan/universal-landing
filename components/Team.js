@@ -1,5 +1,4 @@
 import React from 'react';
-import Icon from './Icon';
 
 const oddTeamStyles = id =>
   id % 2 !== 0 ? {
